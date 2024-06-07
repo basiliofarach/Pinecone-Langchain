@@ -1,0 +1,99 @@
+Comprehensive Guide to Fixing Windows Blue Screen of Death (BSOD)
+The Windows Blue Screen of Death (BSOD) is a notorious error screen that appears when the Windows operating system encounters a critical error from which it cannot recover. This guide aims to help you diagnose and fix the BSOD in a systematic manner. It covers common causes, diagnostic tools, and specific steps to resolve the issue.
+
+Table of Contents
+Understanding BSOD
+
+What is BSOD?
+Common Causes of BSOD
+Initial Steps
+
+Safe Mode
+System Restore
+Check for Hardware Issues
+Diagnostic Tools
+
+Event Viewer
+BlueScreenView
+Windows Memory Diagnostic
+Common BSOD Errors and Fixes
+
+IRQL_NOT_LESS_OR_EQUAL
+PAGE_FAULT_IN_NONPAGED_AREA
+SYSTEM_SERVICE_EXCEPTION
+DRIVER_IRQL_NOT_LESS_OR_EQUAL
+KMODE_EXCEPTION_NOT_HANDLED
+Advanced Troubleshooting
+
+Driver Issues
+Malware and Virus Scans
+Corrupted System Files
+Preventive Measures
+
+Regular Updates
+Backup Strategies
+Safe Computing Practices
+1. Understanding BSOD
+What is BSOD?
+The Blue Screen of Death (BSOD), also known as a stop error or bug check, is a critical error screen displayed by the Windows operating system. When the system encounters a fatal error that prevents it from continuing operations, it crashes, displaying a blue screen with diagnostic information.
+
+Common Causes of BSOD
+Driver Issues: Outdated, corrupted, or incompatible drivers.
+Hardware Failures: Faulty RAM, hard drives, or other hardware components.
+Software Conflicts: Conflicting applications or system services.
+Overheating: Excessive heat causing hardware to malfunction.
+System File Corruption: Damaged or missing system files.
+Malware: Viruses or malware causing system instability.
+2. Initial Steps
+Safe Mode
+Safe Mode starts Windows with a minimal set of drivers and services. It can help you determine if the issue is related to default settings and basic device drivers.
+
+How to Enter Safe Mode:
+
+Restart your computer.
+Press F8 (or Shift + F8 for some systems) before the Windows logo appears.
+Select Safe Mode from the Advanced Boot Options menu.
+If the BSOD does not occur in Safe Mode, it indicates that the problem is likely caused by a driver or software conflict.
+
+System Restore
+System Restore can revert your system to a previous state when it was functioning correctly.
+
+How to Use System Restore:
+
+Boot into Safe Mode (as described above).
+Open the Control Panel.
+Navigate to System and Security > System > System Protection.
+Click System Restore and follow the prompts to choose a restore point.
+Check for Hardware Issues
+Ensure all hardware components are properly connected. Run built-in diagnostics to check for hardware problems.
+
+Steps to Check Hardware:
+
+RAM: Use the Windows Memory Diagnostic tool.
+Hard Drive: Run chkdsk to check the integrity of your hard drive.
+Running Windows Memory Diagnostic:
+
+Press Windows Key + R to open the Run dialog.
+Type mdsched.exe and press Enter.
+Choose Restart now and check for problems.
+Running Check Disk (chkdsk):
+
+Open Command Prompt as Administrator.
+Type chkdsk /f /r and press Enter.
+Restart your computer to allow chkdsk to run.
+3. Diagnostic Tools
+Event Viewer
+Event Viewer logs system events, errors, and warnings, which can help identify the cause of BSOD.
+
+How to Access Event Viewer:
+
+Press Windows Key + X and select Event Viewer.
+Navigate to Windows Logs > System.
+Look for error entries around the time of the BSOD.
+BlueScreenView
+BlueScreenView is a third-party tool that analyzes minidump files created during a BSOD and provides detailed information.
+
+How to Use BlueScreenView:
+
+Download and install BlueScreenView from NirSoft.
+Run BlueScreenView to view the crash details and identify the faulty driver or module.
